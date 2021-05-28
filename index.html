@@ -1,8 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-  </head>
-  <body>
-    test
-  </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>Making software sustainable</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+          integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
+</head>
+<body>
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
+                <li class="pure-menu-item"><a href="#principles" class="pure-menu-link">Principles</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>Synus</h1>
+            <h2>Making software sustainable</h2>
+        </div>
+
+        <div class="content">
+            <h2 id="about" class="content-subhead">About</h2>
+            <p>
+              Hello, my name is Pawel and I have worked in unsustainable software projects far too many times in my career. I would like to see more of the sustainable ones in the future.
+            </p>
+
+            <p>
+              The only way I have found is to spread the word. One part of it is to share what I have learned in written word. Here comes the site.
+            </p>
+
+            <p>
+               On the site I collect thoughts, methods and techniques that make a software project sustainable in public, to spread the word.
+            </p>
+
+            <h2 id="principles">Principles</h2>
+            <p>
+              <ol>
+                <li>Structure your project in a way that is easy to loose couple and hard to tight couple.</li>
+              </ol>
+            </p>
+
+            <h2 id="contact">Contact</h2>
+            <p>
+            <a href="https://github.com/synus-org">Github handle</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/ui.js"></script>
+</body>
 </html>
